@@ -1,4 +1,4 @@
-// Javascript usecases
+// Javascript Use Cases
 
 // 1. access div element by id
 
@@ -40,7 +40,7 @@ console.log(element3.textContent);
 // reads and returns text only as it appears in the html element regardless of whether
 // it is rendered on the screen or not
 // It ignores HTML tags
-// In situations where performance is a concern and
+// In situations where performance is a concern, and
 // you don't need to account for styles,
 // textContent might be a more efficient choice compared to innerText
 
@@ -65,6 +65,104 @@ console.log(element3.textContent);
 
 
 
+/* 3. Declaring variables
+// When to Use var, let, or const?
+1. Always declare variables before using them
+
+2. Always use const if the value should not be changed
+
+3. Always use const if the type should not be changed (Arrays and Objects)
+
+4. Only use let if you can't use const
+
+5. Only use var if you MUST support old browsers.
+
+6. 'let' and 'const' have block scope(ES6) eg:
+
+{
+    let x = 2; // variable x is declared inside this block {}
+}
+// x cannot be used here
+
+
+7. variables declares with 'var' keyword have global scope (only used for old browsers before es6)
+// can be redeclared many times. latest value of variable will be the previously assigned value
+{
+    var x = 2;
+}
+// x can be used here
+
+
+What is Good?
+let and const have block scope.
+
+let and const can not be redeclared.
+
+let and const must be declared before use.
+
+**let and const does not bind to this.
+
+**let and const are not hoisted.
+
+What is Not Good?
+var does not have to be declared.
+
+**var is hoisted.
+
+**var binds to this.
+
+When to use JavaScript const?
+
+**It does not define a constant value. It defines a constant reference to a value.**
+Always declare a variable with const when you know that the value should not be changed.
+
+Use const when you declare:
+
+A new Array
+A new Object
+A new Function
+A new RegExp
+
+
+*/
+
+
+// JavaScript objects can be converted to a string use JSON.stringify()
+
+const obj1 = {
+    first_name : "Lionel",
+    last_name : "Messi",
+    club : "Inter Miami",
+    age : 37
+};
+
+document.getElementById("div8").innerHTML = JSON.stringify(obj1);
+
+let text1 = "";
+
+for(let prop in obj1){
+    text1 += obj1[prop] + " ";
+}
+
+//document.getElementById("div8").innerHTML = text1;
+
+// Constructor in javascript is function to create many objects of the same type
+
+function Obj2(f_name,l_name,cty) {
+    this.first_name = f_name; // first name of this object will be what passed to function from f_name
+    this.last_name = l_name; // last name of this object will be what passed to function from f_name
+    this.city = cty; // city of this object will be what passed to function from cty
+    this.fullName = function() {
+        return this.first_name + " " + this.last_name;
+    };
+}
+
+const man1 = new Obj2("Lionel","Messi","Miami");
+const man2 = new Obj2("Cristino","Ronaldo","Lisbon");
+
+//document.getElementById("div9").innerHTML = JSON.stringify(man1);
+document.getElementById("div9").innerHTML = JSON.stringify(man2);
+
 
 // 7. Create new Element and Set its attribute values of the new element
 
@@ -83,4 +181,6 @@ parentElement7.appendChild(newElement7); // append div70 as child element to par
 
 // Access new created div element by id and set some text into it
 document.getElementById("div70").innerHTML = "New 'div' element created and text is added into it";
+
+
 
