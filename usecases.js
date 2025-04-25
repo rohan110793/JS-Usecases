@@ -163,6 +163,7 @@ const man2 = new Obj2("Cristino","Ronaldo","Lisbon");
 //document.getElementById("div9").innerHTML = JSON.stringify(man1);
 document.getElementById("div9").innerHTML = JSON.stringify(man2);
 
+// Build constructors
 
 // 7. Create new Element and Set its attribute values of the new element
 
