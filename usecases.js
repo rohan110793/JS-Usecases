@@ -163,7 +163,6 @@ const man2 = new Obj2("Cristino","Ronaldo","Lisbon");
 //document.getElementById("div9").innerHTML = JSON.stringify(man1);
 document.getElementById("div9").innerHTML = JSON.stringify(man2);
 
-// Build constructors
 
 // 7. Create new Element and Set its attribute values of the new element
 
@@ -183,5 +182,25 @@ parentElement7.appendChild(newElement7); // append div70 as child element to par
 // Access new created div element by id and set some text into it
 document.getElementById("div70").innerHTML = "New 'div' element created and text is added into it";
 
+/*
+
+function editItem(itemId) {
+    const item = document.getElementById(itemId);
+    const textSpan = item.querySelector('.task-text');
+    const newText = prompt("Edit your task:", textSpan.textContent);
+
+    if (newText !== null && newText.trim() !== "") {
+        textSpan.textContent = newText;
+    }
+}
 
 
+function deleteItem(itemId) {
+    const item = document.getElementById(itemId);
+    if (item) {
+        item.remove();
+    }
+}
+
+
+ */
