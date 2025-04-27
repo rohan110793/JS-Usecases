@@ -203,4 +203,12 @@ function deleteItem(itemId) {
 }
 
 
+const editButton = document.createElement("button");
+editButton.textContent = "Edit";
+editButton.addEventListener("click", function() {
+  editTask(this.parentNode);
+});
+listItem.appendChild(editButton);
+
+
  */
