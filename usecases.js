@@ -202,6 +202,19 @@ function deleteItem(itemId) {
     }
 }
 
+function deleteItem(itemId) {
+    const item = document.getElementById(itemId);
+    if (item) {
+        item.remove();
+    }
+}
+
+const editButton = document.createElement("button");
+editButton.textContent = "Edit";
+editButton.addEventListener("click", function() {
+  editTask(this.parentNode);
+});
+listItem.appendChild(editButton);
 
 const editButton = document.createElement("button");
 editButton.textContent = "Edit";
