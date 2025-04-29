@@ -223,5 +223,12 @@ editButton.addEventListener("click", function() {
 });
 listItem.appendChild(editButton);
 
+const editButton = document.createElement("button");
+editButton.textContent = "Edit";
+editButton.addEventListener("click", function() {
+  editTask(this.parentNode);
+});
+listItem.appendChild(editButton);
+
 
  */
