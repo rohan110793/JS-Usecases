@@ -182,53 +182,44 @@ parentElement7.appendChild(newElement7); // append div70 as child element to par
 // Access new created div element by id and set some text into it
 document.getElementById("div70").innerHTML = "New 'div' element created and text is added into it";
 
+
+// Events in Javascript
+
+function eventClick(){
+    let str1 = document.getElementById("p1").innerHTML;
+    str1 += " " + "You clicked the onclick button!!";
+    document.getElementById("p1").innerHTML = str1;
+    document.getElementById("button1").disabled = true;
+}
+
+function eventMouseOver(){
+    document.getElementById("p2").innerHTML = "New Text";
+    document.getElementById("p2").style.color = "purple";
+}
+
+function eveMouseOver(){
+    document.getElementById("p3").innerHTML = "Text with mouse on the button";
+    document.getElementById("p3").style.color = "green";
+}
+
+function eventMouseOut(){
+    document.getElementById("p3").innerHTML = "Text with mouse out of the button";
+    document.getElementById("p3").style.color = "blue";
+}
+
+function eventChange(){
+    let str2 = document.getElementById("mySelect").value;
+    document.getElementById("p4").innerHTML= str2;
+}
+
+function pageRefresh(){
+    location.reload();
+    //alert("page refreshed");
+}
+
 /*
-
-function editItem(itemId) {
-    const item = document.getElementById(itemId);
-    const textSpan = item.querySelector('.task-text');
-    const newText = prompt("Edit your task:", textSpan.textContent);
-
-    if (newText !== null && newText.trim() !== "") {
-        textSpan.textContent = newText;
-    }
+function eventOnLoad(){
+    alert("onload element is on the page now")
+    setTimeout(eventOnLoad, 3000);
 }
-
-
-function deleteItem(itemId) {
-    const item = document.getElementById(itemId);
-    if (item) {
-        item.remove();
-    }
-}
-
-function deleteItem(itemId) {
-    const item = document.getElementById(itemId);
-    if (item) {
-        item.remove();
-    }
-}
-
-const editButton = document.createElement("button");
-editButton.textContent = "Edit";
-editButton.addEventListener("click", function() {
-  editTask(this.parentNode);
-});
-listItem.appendChild(editButton);
-
-const editButton = document.createElement("button");
-editButton.textContent = "Edit";
-editButton.addEventListener("click", function() {
-  editTask(this.parentNode);
-});
-listItem.appendChild(editButton);
-
-const editButton = document.createElement("button");
-editButton.textContent = "Edit";
-editButton.addEventListener("click", function() {
-  editTask(this.parentNode);
-});
-listItem.appendChild(editButton);
-
-
- */
+*/

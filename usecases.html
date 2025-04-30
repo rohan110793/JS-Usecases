@@ -5,7 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="usecases.css">
 </head>
-<body>
+<body onload="eventOnLoad()">
     <div id="container">
         <div id="div1">
             Trying to access element whose id is "div1" =>
@@ -26,19 +26,49 @@
             <!-- Constructor objects -->
         </div>
         <div id="div10">
-            <!-- output block 10 -->
+
+            <!-- events -->
+            <br><br>
+            <button onclick="eventClick()" id="button1">Try Click</button>
+            <p id="p1">Text for on-click :</p>
+            <br><br>
+
+            <button onmouseover="eventMouseOver()">Try MouseOver</button>
+            <p id="p2">Old text</p>
+            <br><br>
+
+            <button onmouseout="eventMouseOut()" onmouseover="eveMouseOver()">Try Mouse On/Out</button>
+            <p id="p3">Old text before mouse hover</p>
+            <br><br>
+
+            <button onclick="pageRefresh()">Refresh page</button>
+            <br><br><br>
+
+            Demo onchange event
+            <br>
+            <select id="mySelect" onchange="eventChange()">
+                <option value="NoCar" selected>-</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW1">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Volvo">Volvo</option>
+            </select>
+            <br><br>
+            The Car you selected is : <p id="p4">No car selected</p>
+            <br><br>
+
         </div>
         <div id="div11">
             <!-- output block 11 -->
         </div>
         <div id="div12">
-            <!-- output block 11 -->
+            <!-- output block 12 -->
         </div>
         <div id="div13">
-            <!-- output block 11 -->
+            <!-- output block 13 -->
         </div>
         <div id="div14">
-            <!-- output block 11 -->
+            <!-- output block 14 -->
         </div>
     </div>
     <script src="usecases.js"></script>
