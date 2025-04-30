@@ -222,4 +222,17 @@ function eventOnLoad(){
     alert("onload element is on the page now")
     setTimeout(eventOnLoad, 3000);
 }
+
+function editTask(index) {
+  const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskText = taskList[index];
+  const updatedTaskText = prompt('Edit task:', taskText);
+
+  if (updatedTaskText !== null) {
+    taskList[index] = updatedTaskText;
+    localStorage.setItem('tasks', JSON.stringify(taskList));
+    displayTasks();
+  }
+}
+
 */
