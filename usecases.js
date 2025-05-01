@@ -235,4 +235,16 @@ function editTask(index) {
   }
 }
 
+function editTask(index) {
+  const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskText = taskList[index];
+  const updatedTaskText = prompt('Edit task:', taskText);
+
+  if (updatedTaskText !== null) {
+    taskList[index] = updatedTaskText;
+    localStorage.setItem('tasks', JSON.stringify(taskList));
+    displayTasks();
+  }
+}
+
 */
