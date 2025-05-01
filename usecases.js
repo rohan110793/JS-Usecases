@@ -244,6 +244,10 @@ function editTask(index) {
     taskList[index] = updatedTaskText;
     localStorage.setItem('tasks', JSON.stringify(taskList));
     displayTasks();
+    if (updatedTaskText !== null) {
+    taskList[index] = updatedTaskText;
+    localStorage.setItem('tasks', JSON.stringify(taskList));
+    displayTasks();
   }
 }
 
