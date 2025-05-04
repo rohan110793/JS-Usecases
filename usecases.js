@@ -217,6 +217,16 @@ function pageRefresh(){
     //alert("page refreshed");
 }
 
+//Looping in Arrays using for/of loop
+const arr1 = ["messi", "ronaldo", "neymar", "bruno"];
+
+let str3 = "";
+for(let x of arr1){
+    str3 += " " + x;
+}
+document.getElementById("div11").innerHTML = str3;
+
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
