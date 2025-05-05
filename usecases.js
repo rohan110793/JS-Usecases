@@ -226,6 +226,16 @@ for(let x of arr1){
 }
 document.getElementById("div11").innerHTML = str3;
 
+const arr_of_fruits = ["apple", "mango", "grapes", "banana"];
+document.getElementById("div12").innerHTML = arr_of_fruits.length;
+document.getElementById("div13").innerHTML = arr_of_fruits.toString();
+
+let fruit_select = arr_of_fruits.pop();
+document.getElementById("div14").innerHTML = fruit_select;
+
+arr_of_fruits.push("kiwi");
+document.getElementById("div15").innerHTML = arr_of_fruits.toString();
+
 
 /*
 function eventOnLoad(){
