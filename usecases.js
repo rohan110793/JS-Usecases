@@ -236,6 +236,50 @@ document.getElementById("div14").innerHTML = fruit_select;
 arr_of_fruits.push("kiwi");
 document.getElementById("div15").innerHTML = arr_of_fruits.toString();
 
+// array.at(i) will give you arr[i+1]
+document.getElementById("div16").innerHTML =
+    arr_of_fruits.at(2) +
+    " " +
+    arr_of_fruits.at(3) +
+    " " +
+    arr_of_fruits.at(-1);
+
+//Array Shift unshift
+
+let shifted_element1 = arr_of_fruits.shift();
+document.getElementById("div18").innerHTML = arr_of_fruits.join("*")
+document.getElementById("div19").innerHTML = shifted_element1;
+document.getElementById("div20").innerHTML = arr_of_fruits.at(0);
+
+arr_of_fruits.unshift("strawberry")
+
+document.getElementById("div21").innerHTML = arr_of_fruits.at(0);
+document.getElementById("div22").innerHTML = arr_of_fruits.toString();
+
+//array concatenation
+const arr5 = ["snow","ball"];
+const arr6 = ["during","christmas"];
+const arr7 = arr5.concat(arr6);
+
+document.getElementById("div23").innerHTML = arr7.toString();
+
+const arr8 = arr7.concat("of","05");
+document.getElementById("div24").innerHTML = arr8.toString();
+
+arr8.copyWithin(2,0,2);
+document.getElementById("div25").innerHTML = arr8.toString();
+
+// Slice - delete from arrays - creates new array
+const arr9 = ["last","christmas","Everyone","enjoyed"];
+document.getElementById("div26").innerHTML = arr9.join("*");
+arr10 = arr9.slice(2);
+document.getElementById("div27").innerHTML = arr10.join("*");
+
+// splice - add or remove elements
+const arr11 = ["lionel","messi","is","the","best","player"];
+document.getElementById("div28").innerHTML = arr11.join("*");
+arr11.splice(1,2);
+document.getElementById("div29").innerHTML = arr11.toString();
 
 /*
 function eventOnLoad(){
