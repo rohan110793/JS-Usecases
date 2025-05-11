@@ -281,6 +281,11 @@ document.getElementById("div28").innerHTML = arr11.join("*");
 arr11.splice(1,2);
 document.getElementById("div29").innerHTML = arr11.toString();
 
+//arrow function
+// function variable = arguments () => body
+let multi = (h,k) => h*k;
+document.getElementById("div30").innerHTML = multi(5,6);
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
