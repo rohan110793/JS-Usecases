@@ -286,6 +286,23 @@ document.getElementById("div29").innerHTML = arr11.toString();
 let multi = (h,k) => h*k;
 document.getElementById("div30").innerHTML = multi(5,6);
 
+const ret = new Set(["a", "b", "c"]);
+
+ret.add("d");
+ret.add("d");
+ret.add("g");
+ret.add("g");
+ret.add("j");
+ret.add("j");
+
+let str5 = "";
+
+for (let x of ret){
+    str5 += " " + x;
+}
+
+document.getElementById("div31").innerHTML = str5;
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
