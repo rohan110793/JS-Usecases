@@ -286,6 +286,7 @@ document.getElementById("div29").innerHTML = arr11.toString();
 let multi = (h,k) => h*k;
 document.getElementById("div30").innerHTML = multi(5,6);
 
+//sets (takes an array and stores all distinct value of the array)
 const ret = new Set(["a", "b", "c"]);
 
 ret.add("d");
@@ -302,6 +303,22 @@ for (let x of ret){
 }
 
 document.getElementById("div31").innerHTML = str5;
+
+
+//maps - key value pairs
+
+const players = new Map ([
+    ["rohit",4000],
+    ["virat",9000],
+    ["sachin",15000]
+]);
+
+// maps - set and get methods
+document.getElementById("div32").innerHTML = players.get("virat");
+
+players.set("rahul", 11000);
+
+document.getElementById("div33").innerHTML = players.get("rahul");
 
 /*
 function eventOnLoad(){
