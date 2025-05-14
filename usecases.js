@@ -320,6 +320,15 @@ players.set("rahul", 11000);
 
 document.getElementById("div33").innerHTML = players.get("rahul");
 
+// Add event listener to element
+let button7 = document.getElementById("btn1");
+button7.addEventListener("click", generateNumber);
+
+function generateNumber(){
+ let randomNumber = Math.random();
+ document.getElementById("p5").innerHTML = randomNumber;
+}
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
