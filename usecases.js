@@ -329,6 +329,10 @@ function generateNumber(){
  document.getElementById("p5").innerHTML = randomNumber;
 }
 
+let text1 = "Hello";
+document.getElementById("div35").innerHTML = text1.charAt(1);
+
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
