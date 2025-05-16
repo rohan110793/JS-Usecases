@@ -332,6 +332,11 @@ function generateNumber(){
 let text1 = "Hello";
 document.getElementById("div35").innerHTML = text1.charAt(1);
 
+function getRound(x){
+    let roundedVar = Math.round(x);
+    document.getElementById("div36").innerHTML = roundedVar;
+}
+getRound(4.4);
 
 /*
 function eventOnLoad(){
