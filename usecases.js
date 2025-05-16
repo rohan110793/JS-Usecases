@@ -338,6 +338,12 @@ function getRound(x){
 }
 getRound(4.4);
 
+//Regex
+let text7 = "Visit school";
+let n = text7.search("school");
+
+document.getElementById("div37").innerHTML = n;
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
