@@ -344,6 +344,15 @@ let n = text7.search("school");
 
 document.getElementById("div37").innerHTML = n;
 
+let text8 = "Visit school";
+let n1 = text8.charAt(7);
+
+document.getElementById("div38").innerHTML = n1;
+
+
+
+
+
 /*
 function eventOnLoad(){
     alert("onload element is on the page now")
