@@ -347,6 +347,8 @@ document.getElementById("div37").innerHTML = n;
 let text8 = "Visit school";
 let n1 = text8.charAt(7);
 
+//java lang failed
+
 document.getElementById("div38").innerHTML = n1;
 
 
