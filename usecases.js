@@ -347,6 +347,10 @@ document.getElementById("div37").innerHTML = n;
 let text8 = "Visit school";
 let n1 = text8.charAt(7);
 
+let text9 = "Visit school again";
+let n2 = text9.length;
+document.getElementById("div39").innerHTML = n2;
+
 //java lang failed
 
 document.getElementById("div38").innerHTML = n1;
