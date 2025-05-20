@@ -363,6 +363,10 @@ let text10 = "Visit college again";
 let n3 = text10.indexOf("l");
 document.getElementById("div40").innerHTML = n3;
 
+let text11 = "Visit university";
+let n4 = text11.includes("uni");
+document.getElementById("div41").innerHTML = n4;
+
 //java lang failed
 
 /*
