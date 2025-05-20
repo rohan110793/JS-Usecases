@@ -363,7 +363,7 @@ let text10 = "Visit college again";
 let n3 = text10.indexOf("l");
 document.getElementById("div40").innerHTML = n3;
 
-
+//java lang failed
 
 /*
 function eventOnLoad(){
