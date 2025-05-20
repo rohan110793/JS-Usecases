@@ -355,7 +355,13 @@ document.getElementById("div39").innerHTML = n2;
 
 document.getElementById("div38").innerHTML = n1;
 
+let text9 = "Visit school again";
+let n2 = text9.length;
+document.getElementById("div39").innerHTML = n2;
 
+let text10 = "Visit college again";
+let n3 = text10.indexOf("l");
+document.getElementById("div40").innerHTML = n3;
 
 
 
