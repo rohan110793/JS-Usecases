@@ -367,6 +367,11 @@ let text11 = "Visit university";
 let n4 = text11.includes("uni");
 document.getElementById("div41").innerHTML = n4;
 
+let text12 = "Visit company";
+let n5 = text12.slice(2,4)
+document.getElementById("div42").innerHTML = n5;
+
+
 //java lang failed
 
 /*
