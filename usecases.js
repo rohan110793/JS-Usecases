@@ -375,6 +375,10 @@ let text13 = "Visit my company";
 let n6 = text13.endsWith("ny");
 document.getElementById("div43").innerHTML = n6;
 
+let text14 = "Visit my company";
+let n7 = text14.substring(2,7);
+document.getElementById("div44").innerHTML = n7;
+
 
 //java lang failed
 
