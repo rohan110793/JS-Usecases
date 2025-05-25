@@ -379,6 +379,9 @@ let text14 = "Visit my company";
 let n7 = text14.substring(2,7);
 document.getElementById("div44").innerHTML = n7;
 
+let text15 = "Visit my company";
+let n8 = text15.lastIndexOf("my");
+document.getElementById("div44").innerHTML = n7;
 
 //java lang failed
 
@@ -399,6 +402,12 @@ function editTask(index) {
     displayTasks();
   }
 }
+
+function editTask(index) {
+  const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskText = taskList[index];
+  const updatedTaskText = prompt('Edit task:', taskText);
+
 
 function editTask(index) {
   const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
