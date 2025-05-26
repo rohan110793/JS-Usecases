@@ -391,6 +391,11 @@ function eventOnLoad(){
     setTimeout(eventOnLoad, 3000);
 }
 
+function eventOnLoad(){
+    alert("onload element is on the page now")
+    setTimeout(eventOnLoad, 3000);
+}
+
 function editTask(index) {
   const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
   const taskText = taskList[index];
