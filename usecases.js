@@ -413,6 +413,11 @@ function editTask(index) {
   const taskText = taskList[index];
   const updatedTaskText = prompt('Edit task:', taskText);
 
+  function editTask(index) {
+  const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskText = taskList[index];
+  const updatedTaskText = prompt('Edit task:', taskText);
+
 function editTask(index) {
   const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
   const taskText = taskList[index];
